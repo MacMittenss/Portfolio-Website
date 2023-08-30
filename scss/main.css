@@ -37,7 +37,6 @@ button[class^=btn-]:hover,
 a[class^=btn-]:hover,
 input[class^=btn-]:hover {
   background-color: #f29040;
-  padding: 0.8rem 2.5rem;
 }
 
 .bg-main {
@@ -95,7 +94,6 @@ input[class^=btn-]:hover {
 .section-title {
   font-size: 2rem;
   display: block;
-  padding-bottom: 0.5rem;
   text-align: center;
   font-weight: 600;
   text-transform: none;
@@ -103,10 +101,10 @@ input[class^=btn-]:hover {
 
 .bottom-line {
   height: 1px;
-  width: 20rem;
+  width: 9rem;
   background: #ba7932;
   display: block;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 3rem auto;
 }
 
 .items {
@@ -296,6 +294,9 @@ section {
 }
 #header-home .header-content p {
   font-family: "Yeseva One", cursive;
+}
+#header-home .btn-main:hover {
+  background-color: #c2c2c2;
 }
 #header-home::before {
   content: "";
@@ -561,6 +562,9 @@ section {
   padding: 1rem;
   align-items: center;
 }
+#main-footer .footer-content .social a {
+  color: #c2c2c2;
+}
 #main-footer .footer-content .social .fab {
   margin-right: 1rem;
   border: none;
@@ -706,6 +710,44 @@ section {
   #about-d .specials .bx, #about-d .specials .fas {
     font-size: 3rem;
   }
+  #contact-a .section-title {
+    font-size: 1.5rem;
+  }
+  #contact-a .bottom-line {
+    width: 8.5rem;
+    margin: 0 auto 1rem auto;
+  }
+  #contact-a .lead {
+    font-size: 1rem;
+  }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+  #contact-a .text-fields .my-2 {
+    margin: 1rem 0;
+  }
+  #contact-a button[type=submit] {
+    width: 40%;
+  }
+  #contact-b .contact-info {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 solid;
+  }
+  #contact-b .contact-info:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #contact-b .contact-info h3 {
+    font-size: 0.9rem;
+  }
+  #contact-b .contact-info p {
+    font-size: 0.8rem;
+  }
+  #contact-c h1 {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 1000px) and (max-width: 768px) {
   section {
@@ -741,8 +783,8 @@ section {
     padding-bottom: 0.1rem;
   }
   #work-a .container .bottom-line {
-    width: 6rem;
-    margin-bottom: 5px;
+    width: 5rem;
+    margin-bottom: 2rem;
   }
   #work-a .container .lead {
     font-size: 0.9rem;
@@ -823,8 +865,24 @@ section {
   #about-d .specials .bx h3, #about-d .specials .fas h3 {
     font-size: 0.7rem;
   }
+  #contact-a .section-title {
+    font-size: 1.2rem;
+  }
+  #contact-a .bottom-line {
+    width: 8rem;
+    margin: 0 auto 0.5rem auto;
+  }
+  #contact-a .lead {
+    font-size: 0.9rem;
+  }
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+  #contact-a .text-fields .my-2 {
+    margin: 0.6rem 0;
+  }
+  #contact-a button[type=submit] {
+    width: 40%;
   }
   #contact-b div {
     margin-bottom: 1rem;
@@ -835,6 +893,12 @@ section {
     border: none;
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+  #contact-b div h3 {
+    font-size: 0.9rem;
+  }
+  #contact-b div p {
+    font-size: 0.8rem;
   }
   #contact-c h1 {
     font-size: 2rem;
@@ -883,7 +947,7 @@ section {
   }
   #work-a .container .bottom-line {
     width: 5rem;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
   }
   #work-a .container .lead {
     font-size: 0.9rem;
@@ -997,6 +1061,7 @@ section {
   #about-d .specials {
     margin-top: 1.5rem;
     margin-bottom: 0;
+    align-items: center;
   }
   #about-d .specials .bx, #about-d .specials .fas {
     font-size: 2.3rem;
@@ -1004,21 +1069,51 @@ section {
   #about-d .specials .bx div h3, #about-d .specials .fas div h3 {
     font-size: 0.7rem !important;
   }
+  #contact-a .section-title {
+    font-size: 0.9rem;
+  }
+  #contact-a .bottom-line {
+    width: 5.5rem;
+    margin: 0 auto 0.3rem auto;
+  }
+  #contact-a .lead {
+    font-size: 0.7rem;
+  }
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message";
+    grid-gap: 0.8rem;
+    margin-bottom: 0;
   }
-  #contact-b div {
+  #contact-a .text-fields .message-input {
+    height: 200px;
+  }
+  #contact-a .text-fields .my-2 {
+    margin: 0.4rem 0;
+  }
+  #contact-a button[type=submit] {
+    width: 30%;
+  }
+  #contact-b {
+    padding-top: 0;
+  }
+  #contact-b .contact-info {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px #555 solid;
   }
-  #contact-b div:last-child {
+  #contact-b .contact-info:last-child {
     border: none;
     margin-bottom: 0;
     padding-bottom: 0;
   }
+  #contact-b .contact-info h3 {
+    font-size: 0.7rem;
+  }
+  #contact-b .contact-info p {
+    font-size: 0.6rem;
+  }
   #contact-c h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #main-footer {
     height: 5rem;
@@ -1037,8 +1132,8 @@ section {
 }
 @media (max-width: 470px) {
   section {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
   #header-home {
     height: 7.7rem;
@@ -1056,7 +1151,7 @@ section {
     padding: 0.3rem;
   }
   #header-home #main-nav ul li a {
-    font-size: 0.45rem;
+    font-size: 0.55rem;
   }
   #header-home #main-nav ul li .current {
     padding-top: 0px;
@@ -1094,10 +1189,7 @@ section {
     grid-template-columns: 1fr;
   }
   .py-2 {
-    padding: 2rem 0;
-  }
-  #home {
-    padding-top: 0px;
+    padding: 1rem 0;
   }
   #home-a .section-title {
     font-size: 0.8rem;
@@ -1106,9 +1198,11 @@ section {
   #home-a .bottom-line {
     height: 0.5px;
     width: 6.5rem;
+    margin: 0 auto 1.5rem auto;
   }
   #home-a .lead {
     font-size: 0.6rem;
+    margin-bottom: 0.5rem;
   }
   #home-c .container {
     padding: 0;
@@ -1120,9 +1214,10 @@ section {
   #home-c .container .bottom-line {
     height: 0.5px;
     width: 6.5rem;
+    margin: 0 auto 1.5rem auto;
   }
   #home-c .container .lead {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     margin-bottom: 0;
   }
   #home-c .container .process {
@@ -1173,21 +1268,29 @@ section {
     height: 180px;
     border-radius: 5px;
   }
+  #about-c {
+    padding: 0.5rem 0;
+  }
+  #about-c .container {
+    padding: 0;
+  }
   #about-c .container .bx {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   #about-d {
-    padding-top: 5px;
+    padding: 0;
   }
   #about-d .section-title {
     font-size: 0.8rem;
+    margin-bottom: 2px;
   }
   #about-d .bottom-line {
-    width: 12rem;
+    width: 10rem;
+    margin: 0 auto 1.2rem auto;
   }
   #about-d .specials {
     margin-top: 1.2rem;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     grid-template-columns: repeat(2, 2fr);
     padding: 5px;
   }
@@ -1197,21 +1300,61 @@ section {
   #about-d .specials .bx div h3, #about-d .specials .fas div h3 {
     font-size: 0.7rem !important;
   }
+  .py-3 {
+    padding: 1.5rem 0;
+  }
+  .py-4 {
+    padding: 2rem 0;
+  }
+  #contact-a .section-title {
+    font-size: 0.8rem;
+  }
+  #contact-a .bottom-line {
+    width: 4.8rem;
+    margin: 0 auto 0.3rem auto;
+  }
+  #contact-a .lead {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message";
+    grid-gap: 0.8rem;
+    margin-bottom: 0;
   }
-  #contact-b div {
+  #contact-a .text-fields .name-input, #contact-a .text-fields .subject-input, #contact-a .text-fields .email-input, #contact-a .text-fields .phone-input {
+    padding: 0.4rem 0.9rem;
+  }
+  #contact-a .text-fields .message-input {
+    height: 150px;
+  }
+  #contact-a .text-fields .my-2 {
+    margin: 0.4rem 0;
+  }
+  #contact-a button[type=submit] {
+    width: 50%;
+  }
+  #contact-a .btn-light {
+    height: 38px;
+  }
+  #contact-b .contact-info {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px #555 solid;
   }
-  #contact-b div:last-child {
+  #contact-b .contact-info:last-child {
     border: none;
     margin-bottom: 0;
     padding-bottom: 0;
   }
+  #contact-b .contact-info h3 {
+    font-size: 0.7rem;
+  }
+  #contact-b .contact-info p {
+    font-size: 0.6rem;
+  }
   #contact-c h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #main-footer {
     height: 5rem;
@@ -1228,9 +1371,12 @@ section {
     padding: 0;
   }
 }
-@media (max-height: 580px) {
+@media (max-height: 600px) {
+  #header-home {
+    height: 100vh;
+  }
   #header-home .header-content {
-    padding-top: 3rem;
+    padding-top: 10rem;
   }
 }
 @media (max-height: 330px) {
