@@ -266,6 +266,10 @@ section {
       text-transform: uppercase;
     }
 
+    .bottom-line {
+      margin: 0 auto 1rem auto;
+    }
+
     // Grid Area
     .bio-image {
       grid-area: bioimage;
@@ -284,7 +288,7 @@ section {
 
     .bio {
       grid-area: bio;
-      padding: 20px;
+      padding: 75px;
     }
 
     .award-1 {
