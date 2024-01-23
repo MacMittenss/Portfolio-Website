@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -286,13 +287,13 @@ section {
   color: #c2c2c2;
 }
 #header-home .header-content h1 {
-  font-size: 3.7rem;
+  font-size: 5rem;
   line-height: 1.6;
-  font-family: "Yeseva One", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 900;
 }
 #header-home .header-content p {
-  font-family: "Yeseva One", cursive;
+  font-family: "Bebas Neue", sans-serif;
 }
 #header-home .btn-main:hover {
   background-color: #c2c2c2;
@@ -595,7 +596,7 @@ section {
   #header-home .header-content h1 {
     font-size: 2.8rem;
     line-height: 1.6;
-    font-family: "Yeseva One", cursive;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 900;
   }
   #home-c .process {

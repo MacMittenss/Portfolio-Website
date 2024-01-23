@@ -2,6 +2,7 @@
 @import 'utilities';
 @import 'item_grid';
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 // General Styles
 * {
@@ -102,14 +103,14 @@ section {
       color: $light-color;
       
       h1 {
-        font-size: 3.7rem;
+        font-size: 5rem;
         line-height: 1.6;
-        font-family: 'Yeseva One', cursive;
+        font-family: 'Bebas Neue', sans-serif;
         font-weight: 900;
       }
 
       p {
-        font-family: 'Yeseva One', cursive;
+        font-family: 'Bebas Neue', sans-serif;
       }
     }
 
