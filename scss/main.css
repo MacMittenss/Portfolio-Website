@@ -204,19 +204,20 @@ input[class^=btn-]:hover {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.5;
-  background: #18181c;
-  color: #c2c2c2;
+  background: #f5f5f5;
+  color: #333;
   overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-  color: #18181c;
+  color: #333;
 }
 
 ul {
@@ -234,19 +235,18 @@ img {
 }
 
 section {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 100px;
 }
 
 #logo {
   width: 70px;
   height: 70px;
-  color: #c2c2c2;
+  color: #333;
   text-transform: uppercase;
 }
 
 .nav-shadow {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 #main-nav {
@@ -262,42 +262,54 @@ section {
 }
 #main-nav a {
   text-decoration: none;
-  color: #f5f5f5;
+  color: #333;
   text-transform: uppercase;
   border-bottom: 2px transparent solid;
   padding-bottom: 0.5rem;
-  transition: border-color 0.5s;
+  transition: border-color 0.3s;
 }
 #main-nav a:hover {
-  border-color: #c2c2c2;
+  border-color: #3498db;
 }
 #main-nav a.current {
-  border-color: #f29040;
+  border-color: #3498db;
 }
 
 #header-home {
-  background: url("../img/myshowcase.jpg") no-repeat left center/cover;
+  background: url("path/to/your/image.jpg") no-repeat left center/cover;
   height: 95vh;
-  color: #c2c2c2;
+  color: #fff;
   position: relative;
 }
 #header-home .header-content {
   text-align: left;
   padding-top: 35%;
   font-family: "Roboto", sans-serif;
-  color: #c2c2c2;
 }
 #header-home .header-content h1 {
   font-size: 6.5rem;
-  line-height: 1.6;
+  line-height: 1;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 900;
+  color: #fff;
 }
 #header-home .header-content p {
   font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+#header-home .btn-main {
+  background-color: #3498db;
+  border: none;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 #header-home .btn-main:hover {
-  background-color: #c2c2c2;
+  background-color: #2980b9;
 }
 #header-home::before {
   content: "";
@@ -306,45 +318,52 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.4);
 }
 #header-home * {
   z-index: 10;
 }
 #header-inner {
-  background: url("../img/myshowcase.jpg") no-repeat 10% 20%/cover;
+  background: url("path/to/your/image.jpg") no-repeat 10% 20%/cover;
   height: 6rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #home-a {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 #home-a .section-title {
   font-weight: 900;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: #333;
 }
 #home-b .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  color: #18181c;
+  color: #333;
 }
 #home-b .stats li {
   line-height: 2;
 }
 #home-b .stats li.stats-title {
   font-size: 1.3rem;
+  font-weight: 700;
 }
 #home-b .stats li.stats-number {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 #home-b .stats div {
   padding: 3rem 0;
-  color: #c2c2c2;
-  border-left: 1px solid #545454;
+  color: #333;
+  border-left: 1px solid #ddd;
 }
 #home-c .section-title {
   font-weight: 900;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: #333;
 }
 #home-c .process {
   display: grid;
@@ -359,11 +378,14 @@ section {
   visibility: hidden;
   opacity: 0;
   transform: translate(1200px, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #home-c .process-div.show {
   transform: none;
   visibility: visible;
-  opacity: 10;
+  opacity: 1;
 }
 #home-c .process-step {
   position: absolute;
@@ -383,10 +405,12 @@ section {
   border-radius: 50%;
   background: #c2c2c2;
   color: #18181c;
-  padding: 3rem;
+  padding: 6rem;
   width: 100px;
   height: 100px;
-  line-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
   transition: all 0.1s;
@@ -446,13 +470,13 @@ section {
 #about-a .award-1 .fas,
 #about-a .award-2 .fas,
 #about-a .award-3 .fas {
-  color: #f29040;
+  color: #3498db;
   margin: 1rem;
 }
 #about-b .progress {
   overflow: hidden;
   height: 70px;
-  background: #c2c2c2;
+  background: #fff;
   border-radius: 10px;
   margin-bottom: 0.1rem;
 }
@@ -460,13 +484,13 @@ section {
   height: 100%;
   color: #fff;
   text-align: center;
-  background: #f29040;
+  background: #3498db;
 }
 #about-c {
-  color: #c2c2c2;
-  background: #18181c;
+  color: #fff;
+  background: #333;
   border-bottom: 1px solid rgba(169, 169, 169, 0.3);
-  margin-top: 0px;
+  margin-top: 0;
 }
 #about-c .container {
   display: grid;
@@ -475,7 +499,7 @@ section {
   text-align: center;
 }
 #about-c .container .bx {
-  background: #18181c;
+  background: #333;
   font-size: 5rem;
   transition: all 0.2s ease;
   padding: 1rem;
@@ -484,7 +508,7 @@ section {
   transform: scale(1.5);
 }
 #about-c .logo-area {
-  background: #18181c;
+  background: #333;
 }
 #about-d .specials {
   margin-top: 2.5rem;
@@ -498,12 +522,12 @@ section {
   font-size: 12px;
 }
 #about-d .specials .fas {
-  color: #ba7932;
+  color: #3498db;
   padding-bottom: 1rem;
   font-size: 3rem;
 }
 #about-d .specials .bx {
-  color: #ba7932;
+  color: #3498db;
   padding-bottom: 1rem;
   font-size: 3rem;
 }
@@ -539,9 +563,22 @@ section {
 }
 #contact-a .text-fields .text-input {
   padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 #contact-a button[type=submit] {
   width: 50%;
+  background-color: #3498db;
+  border: none;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#contact-a button[type=submit]:hover {
+  background-color: #2980b9;
 }
 #contact-b .contact-info {
   display: grid;
@@ -551,13 +588,14 @@ section {
 #contact-c h1 {
   text-align: center;
   font-size: 4rem;
+  color: #3498db;
 }
 
 #main-footer {
-  background: #18181c;
-  color: #c2c2c2;
+  background: #333;
+  color: #fff;
   height: 3rem;
-  border-top: 1px solid #545454;
+  border-top: 1px solid #ddd;
 }
 #main-footer .footer-content {
   display: flex;
@@ -567,7 +605,7 @@ section {
   align-items: center;
 }
 #main-footer .footer-content .social a {
-  color: #c2c2c2;
+  color: #fff;
 }
 #main-footer .footer-content .social .fab {
   margin-right: 1rem;
@@ -580,7 +618,7 @@ section {
   padding: 0.5rem;
 }
 #main-footer .footer-content .social .fab:hover {
-  background: #f29040;
+  background: #3498db;
 }
 
 @media (max-width: 1280px) {
