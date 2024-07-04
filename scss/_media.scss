@@ -10,9 +10,9 @@
 
 @media (max-width: 1190px) {
   #header-home {
-    height: 50vh;
+    height: 65vh;
     .header-content {
-
+      
       h1 {
         font-size: 2.8rem;
         line-height: 1.6;
@@ -111,7 +111,7 @@
   }
 
   #header-home {
-    height: 50vh;
+    height: 55vh;
     .header-content {
       padding-top: 20rem;
     }
@@ -256,6 +256,7 @@
   #main-nav {
     flex-direction: column;
     align-items: center;
+    padding-top: 0rem;
 
     li {
       padding: 0.7rem;
@@ -269,11 +270,19 @@
 
   #header {
     &-home {
-      height: 9rem;
+      height: 0rem;
       border-bottom: 2px solid $main-color;
       background-position: 20% 30%;
 
       .header-content {
+        display: none !important;
+      }
+
+      #view-services {
+        display: none;
+      }
+
+      #contact-us {
         display: none;
       }
       
@@ -335,6 +344,7 @@
   // Home
   #home {
     &-a {
+      padding-top: 10rem;
       .section-title {
         font-size: 1.5rem;
         padding-bottom: 0.3rem;
@@ -503,7 +513,7 @@
   }
   #header {
     &-home {
-      height: 8.3rem;
+      height: 0rem;
       border-bottom: 1px solid $main-color;
       background-position: 20% 30%;
 
@@ -811,7 +821,7 @@
   }
   #header {
     &-home {
-      height: 7.7rem;
+      height: 0rem;
       border-bottom: 1px solid $main-color;
       background-position: 20% 30%;
 

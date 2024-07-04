@@ -238,8 +238,8 @@ section {
 }
 
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 110px;
+  height: 110px;
   color: #333;
   text-transform: uppercase;
 }
@@ -253,6 +253,7 @@ section {
   justify-content: space-between;
   padding: 1rem 2rem;
   width: 100%;
+  z-index: 1000;
 }
 #main-nav ul {
   display: flex;
@@ -262,7 +263,7 @@ section {
 }
 #main-nav a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff !important;
   text-transform: uppercase;
   border-bottom: 2px transparent solid;
   padding-bottom: 0.5rem;
@@ -276,8 +277,8 @@ section {
 }
 
 #header-home {
-  background: url("path/to/your/image.jpg") no-repeat left center/cover;
-  height: 60vh;
+  background: url(/dist/img/myshowcase.jpg) no-repeat left center/cover;
+  height: 80vh;
   color: #fff;
   position: relative;
 }
@@ -318,7 +319,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
 }
 #header-home * {
   z-index: 10;
@@ -871,7 +872,7 @@ body {
 }
 @media (max-width: 1190px) {
   #header-home {
-    height: 50vh;
+    height: 65vh;
   }
   #header-home .header-content h1 {
     font-size: 2.8rem;
@@ -944,7 +945,7 @@ body {
     margin-left: 50px;
   }
   #header-home {
-    height: 50vh;
+    height: 55vh;
   }
   #header-home .header-content {
     padding-top: 20rem;
@@ -1042,6 +1043,7 @@ body {
   #main-nav {
     flex-direction: column;
     align-items: center;
+    padding-top: 0rem;
   }
   #main-nav li {
     padding: 0.7rem;
@@ -1050,11 +1052,17 @@ body {
     font-size: 0.8rem;
   }
   #header-home {
-    height: 9rem;
+    height: 0rem;
     border-bottom: 2px solid #f29040;
     background-position: 20% 30%;
   }
   #header-home .header-content {
+    display: none !important;
+  }
+  #header-home #view-services {
+    display: none;
+  }
+  #header-home #contact-us {
     display: none;
   }
   #header-home #view-work {
@@ -1091,6 +1099,9 @@ body {
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr;
+  }
+  #home-a {
+    padding-top: 10rem;
   }
   #home-a .section-title {
     font-size: 1.5rem;
@@ -1203,7 +1214,7 @@ body {
     margin-right: 30px;
   }
   #header-home {
-    height: 8.3rem;
+    height: 0rem;
     border-bottom: 1px solid #f29040;
     background-position: 20% 30%;
   }
@@ -1422,7 +1433,7 @@ body {
     margin-right: 8px;
   }
   #header-home {
-    height: 7.7rem;
+    height: 0rem;
     border-bottom: 1px solid #f29040;
     background-position: 20% 30%;
   }

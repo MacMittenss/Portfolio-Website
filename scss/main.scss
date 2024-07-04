@@ -44,8 +44,8 @@ section {
 
 // Logo
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 110px;
+  height: 110px;
   color: #333;
   text-transform: uppercase;
 }
@@ -60,6 +60,7 @@ section {
   justify-content: space-between;
   padding: 1rem 2rem;
   width: 100%;
+  z-index: 1000;
 
   ul {
     display: flex;
@@ -71,7 +72,7 @@ section {
 
   a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff !important;
     text-transform: uppercase;
     border-bottom: 2px transparent solid;
     padding-bottom: 0.5rem;
@@ -91,8 +92,8 @@ section {
 #header {
   // Header Home
   &-home {
-    background: url('path/to/your/image.jpg') no-repeat left center / cover;
-    height: 60vh;
+    background: url(/dist/img/myshowcase.jpg) no-repeat left center / cover;
+    height: 80vh;
     color: #fff;
     position: relative;
 
@@ -140,7 +141,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); // Lighter overlay
+    background: rgba(0, 0, 0, 0.8); // Lighter overlay
   }
 
   &-home * {
