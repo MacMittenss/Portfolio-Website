@@ -285,7 +285,7 @@ section {
 #header-home .header-content {
   text-align: left;
   padding-top: 35%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 #header-home .header-content h1 {
   font-size: 5.5rem;
@@ -582,7 +582,7 @@ section {
 }
 #contact-a button[type=submit] {
   width: 80%;
-  background-color: #3498db;
+  background-color: #f29040;
   border: none;
   padding: 1rem;
   color: #fff;
@@ -594,7 +594,7 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 #contact-a button[type=submit]:hover {
-  background-color: #2980b9;
+  background-color: #ba7932;
   transform: translateY(-3px);
 }
 #contact-b .contact-info {
@@ -642,23 +642,20 @@ section {
   padding: 1rem;
   align-items: center;
 }
-#main-footer .footer-content .social a {
-  color: #fff;
+
+#header-services .header-content h1 {
+  margin-bottom: 0rem;
 }
-#main-footer .footer-content .social .fab {
-  margin-right: 1rem;
-  border: none;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  line-height: 20px;
-  text-align: center;
-  padding: 0.5rem;
-}
-#main-footer .footer-content .social .fab:hover {
-  background: #3498db;
+#header-services .bottom-line {
+  width: 16rem;
+  height: 3px;
+  background-color: #f29040;
+  margin-bottom: 0rem;
 }
 
+#services {
+  padding-top: 0rem;
+}
 #services .container .services-list,
 #services .container .service-areas-list {
   display: grid;
@@ -720,7 +717,21 @@ body {
 /* Header Styles */
 #header-pricing {
   background-color: #dedede;
-  padding: 1rem 0;
+}
+
+#pricing {
+  border-radius: 10px;
+}
+#pricing .section-title {
+  font-family: "Staatliches", cursive;
+  font-size: 50px;
+  margin-bottom: 0rem;
+}
+#pricing .bottom-line {
+  width: 15rem;
+  height: 3px;
+  background-color: #f29040;
+  margin: 0 auto 1rem auto;
 }
 
 #main-nav {
@@ -766,6 +777,9 @@ body {
 #pricing {
   background-color: #fff;
   padding: 2rem 0;
+}
+#pricing .fee-statement {
+  font-size: 20px;
 }
 
 .section-title {
@@ -864,10 +878,10 @@ body {
 
 @media (max-width: 1280px) {
   #main-footer {
-    background: #18181c;
-    color: #c2c2c2;
+    background: #ddd;
+    color: #18181c;
     height: 3rem;
-    border-top: 1px solid #545454;
+    border-top: 1px solid #ddd;
   }
 }
 @media (max-width: 1190px) {
@@ -929,14 +943,10 @@ body {
     grid-template-columns: repeat(2, 2fr);
   }
   #main-footer {
-    background: #18181c;
-    color: #c2c2c2;
+    background: #ddd;
+    color: #18181c;
     height: 3rem;
-    border-top: 1px solid #545454;
-    margin-top: 0;
-  }
-  #main-footer .footer-content {
-    height: 3rem;
+    border-top: 1px solid #ddd;
   }
 }
 @media (max-width: 1000px) {

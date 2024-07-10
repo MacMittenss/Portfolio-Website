@@ -101,7 +101,7 @@ section {
     .header-content {
       text-align: left;
       padding-top: 35%;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Lato", sans-serif;
 
       h1 {
         font-size: 5.5rem;
@@ -482,7 +482,7 @@ section {
 
     button[type='submit'] {
       width: 80%;
-      background-color: #3498db;
+      background-color: $main-color;
       border: none;
       padding: 1rem;
       color: #fff;
@@ -494,7 +494,7 @@ section {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
       &:hover {
-        background-color: #2980b9;
+        background-color: $medium-color;
         transform: translateY(-3px);
       }
     }
@@ -552,32 +552,28 @@ section {
     height: 3rem;
     padding: 1rem;
     align-items: center;
-
-    .social {
-      a {
-        color: #fff;
-      }
-
-      .fab {
-        margin-right: 1rem;
-        border: none;
-        border-radius: 50%;
-        height: 20px;
-        width: 20px;
-        line-height: 20px;
-        text-align: center;
-        padding: 0.5rem;
-
-        &:hover {
-          background: #3498db;
-        }
-      }
-    }
   }
 }
 
 // Services
+
+#header-services {
+  .header-content{
+    h1 {
+      margin-bottom: 0rem;
+    }
+  }
+
+  .bottom-line {
+    width: 16rem;
+    height: 3px;
+    background-color: $main-color;
+    margin-bottom: 0rem;  
+  }
+}
+
 #services {
+  padding-top: 0rem;
   .container {
     .services-list,
     .service-areas-list {
@@ -636,7 +632,22 @@ body {
 /* Header Styles */
 #header-pricing {
   background-color: #dedede;
-  padding: 1rem 0;
+}
+
+#pricing {
+  border-radius: 10px;
+  .section-title {
+    font-family: "Staatliches", cursive;
+    font-size: 50px;
+    margin-bottom: 0rem;
+  }
+
+  .bottom-line {
+    width: 15rem;
+    height: 3px;
+    background-color: $main-color;
+    margin: 0 auto 1rem auto;  
+  }
 }
 
 #main-nav {
@@ -689,6 +700,10 @@ body {
 #pricing {
   background-color: #fff;
   padding: 2rem 0;
+
+  .fee-statement {
+    font-size: 20px;
+  }
 }
 
 .section-title {
