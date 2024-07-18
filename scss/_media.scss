@@ -185,7 +185,8 @@
   #contact {
     &-a {
       .section-title {
-        font-size: 1.5rem;
+        font-family: "Staatliches", cursive;
+        font-size: 3rem;
       }
 
       .bottom-line {
@@ -343,6 +344,7 @@
       .section-title {
         font-size: 1.5rem;
         padding-bottom: 0.3rem;
+        padding-top: 1rem;
       }
       .bottom-line {
         height: 1px;
@@ -431,7 +433,7 @@
   #contact {
     &-a {
       .section-title {
-        font-size: 1.2rem;
+        font-size: 2rem;
       }
 
       .bottom-line {
@@ -519,12 +521,13 @@
       #main-nav {
         flex-direction: column;
         align-items: center;
+        padding-top: 0rem;
     
         li {
-          padding: 0.5rem;
-
+          padding: 0.7rem;
+    
           a {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
           }
         }
       }
@@ -593,6 +596,7 @@
       .section-title {
         font-size: 1.2rem;
         padding-bottom: 0.1rem;
+        padding-top: 0.5rem;
       }
       .bottom-line {
         height: 1px;
@@ -723,7 +727,7 @@
   #contact {
     &-a {
       .section-title {
-        font-size: 0.9rem;
+        font-size: 1.9rem;
       }
 
       .bottom-line {
@@ -830,10 +834,10 @@
     
         ul {
           li {
-            padding: 0.3rem;
+            padding: 0.7rem;
   
             a {
-              font-size: 0.55rem;
+              font-size: 0.8rem;
             }
 
             .current {
@@ -850,21 +854,6 @@
 
     &-inner {
       height: 7.7rem;
-
-      #main-nav {
-        flex-direction: column;
-        align-items: center;
-
-        ul {
-          li {
-            padding: 0.3rem;
-  
-            a {
-              font-size: 0.55rem;
-            }
-          }
-        }
-      }
     }
   }
 // Work
@@ -1047,8 +1036,10 @@
   
   #contact {
     &-a {
+      padding-top: 3rem;
+
       .section-title {
-        font-size: 0.8rem;
+        font-size: 1.7rem;
       }
 
       .bottom-line {

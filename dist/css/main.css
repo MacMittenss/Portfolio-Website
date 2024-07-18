@@ -327,7 +327,6 @@ section {
 #header-inner {
   background: url("path/to/your/image.jpg") no-repeat 10% 20%/cover;
   height: 6rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #home-a {
@@ -550,6 +549,10 @@ section {
   margin-bottom: 2rem;
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
+}
+#contact-a h2 {
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
 }
 #contact-a .text-fields {
   display: grid;
@@ -1007,7 +1010,8 @@ body {
     font-size: 3rem;
   }
   #contact-a .section-title {
-    font-size: 1.5rem;
+    font-family: "Staatliches", cursive;
+    font-size: 3rem;
   }
   #contact-a .bottom-line {
     width: 8.5rem;
@@ -1116,6 +1120,7 @@ body {
   #home-a .section-title {
     font-size: 1.5rem;
     padding-bottom: 0.3rem;
+    padding-top: 1rem;
   }
   #home-a .bottom-line {
     height: 1px;
@@ -1172,7 +1177,7 @@ body {
     font-size: 0.7rem;
   }
   #contact-a .section-title {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   #contact-a .bottom-line {
     width: 8rem;
@@ -1234,12 +1239,13 @@ body {
   #header-home #main-nav {
     flex-direction: column;
     align-items: center;
+    padding-top: 0rem;
   }
   #header-home #main-nav li {
-    padding: 0.5rem;
+    padding: 0.7rem;
   }
   #header-home #main-nav li a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   #header-home #view-work {
     display: none;
@@ -1285,6 +1291,7 @@ body {
   #home-a .section-title {
     font-size: 1.2rem;
     padding-bottom: 0.1rem;
+    padding-top: 0.5rem;
   }
   #home-a .bottom-line {
     height: 1px;
@@ -1377,7 +1384,7 @@ body {
     font-size: 0.7rem !important;
   }
   #contact-a .section-title {
-    font-size: 0.9rem;
+    font-size: 1.9rem;
   }
   #contact-a .bottom-line {
     width: 5.5rem;
@@ -1455,10 +1462,10 @@ body {
     align-items: center;
   }
   #header-home #main-nav ul li {
-    padding: 0.3rem;
+    padding: 0.7rem;
   }
   #header-home #main-nav ul li a {
-    font-size: 0.55rem;
+    font-size: 0.8rem;
   }
   #header-home #main-nav ul li .current {
     padding-top: 0px;
@@ -1468,16 +1475,6 @@ body {
   }
   #header-inner {
     height: 7.7rem;
-  }
-  #header-inner #main-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  #header-inner #main-nav ul li {
-    padding: 0.3rem;
-  }
-  #header-inner #main-nav ul li a {
-    font-size: 0.55rem;
   }
   #work-a .container .section-title {
     font-size: 0.9rem;
@@ -1613,8 +1610,11 @@ body {
   .py-4 {
     padding: 2rem 0;
   }
+  #contact-a {
+    padding-top: 3rem;
+  }
   #contact-a .section-title {
-    font-size: 0.8rem;
+    font-size: 1.7rem;
   }
   #contact-a .bottom-line {
     width: 4.8rem;

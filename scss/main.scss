@@ -152,7 +152,6 @@ section {
   &-inner {
     background: url('path/to/your/image.jpg') no-repeat 10% 20% / cover;
     height: 6rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -444,6 +443,11 @@ section {
   }
 
   &-a {
+    h2 {
+    font-family: "Staatliches", cursive;
+    font-size: 3rem;
+    }
+
     .text-fields {
       display: grid;
       grid-template-areas: 
