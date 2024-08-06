@@ -359,6 +359,9 @@ section {
   color: #333;
   border-left: 1px solid #ddd;
 }
+#home-c {
+  padding-top: 3rem;
+}
 #home-c .section-title {
   font-weight: 900;
   font-family: "Bebas Neue", sans-serif;
