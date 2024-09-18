@@ -278,7 +278,7 @@ section {
 
 #header-home {
   background: url(/img/myshowcase.png) no-repeat left center/cover;
-  height: 150vh;
+  height: 120vh;
   color: #fff;
   position: relative;
 }
@@ -893,6 +893,9 @@ body {
 @media (max-width: 1190px) {
   #header-home {
     height: 65vh;
+  }
+  #header-home .header-content {
+    padding-top: 15%;
   }
   #header-home .header-content h1 {
     font-size: 2.8rem;
