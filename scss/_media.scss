@@ -1,22 +1,23 @@
 // Tablets & Smaller
 @media (max-width: 1280px) {
   #main-footer {
-    background: #ddd;
-    color: $dark-color;
+    background: $dark-color;
+    color: $light-color;
     height: 3rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid $grey-color;
+    margin-top: 150px;
   }
 }
 
 @media (max-width: 1190px) {
   #header-home {
-    height: 65vh;
+    height: 80vh;
     .header-content {
-      padding-top: 15%;
+
       h1 {
         font-size: 2.8rem;
         line-height: 1.6;
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: "Yeseva One", cursive;
         font-weight: 900;
       }
     }
@@ -56,7 +57,6 @@
 
         img {
           width: 500px;
-          height: 500px;
           .bio {
             h4 {
               font-size: 1rem;
@@ -92,10 +92,15 @@
   }
 
   #main-footer {
-    background: #ddd;
-    color: $dark-color;
+    background: $dark-color;
+    color: $light-color;
     height: 3rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid $grey-color;
+    margin-top: 0;
+
+    .footer-content {
+      height: 3rem;
+    }
   }
 }
 
@@ -106,9 +111,9 @@
   }
 
   #header-home {
-    height: 75vh;
+
     .header-content {
-      padding-top: 14rem;
+      padding-top: 20rem;
     }
   }
   // Work
@@ -185,8 +190,7 @@
   #contact {
     &-a {
       .section-title {
-        font-family: "Staatliches", cursive;
-        font-size: 3rem;
+        font-size: 1.5rem;
       }
 
       .bottom-line {
@@ -252,7 +256,6 @@
   #main-nav {
     flex-direction: column;
     align-items: center;
-    padding-top: 0rem;
 
     li {
       padding: 0.7rem;
@@ -266,19 +269,11 @@
 
   #header {
     &-home {
-      height: 0rem;
+      height: 9rem;
       border-bottom: 2px solid $main-color;
       background-position: 20% 30%;
 
       .header-content {
-        display: none !important;
-      }
-
-      #view-services {
-        display: none;
-      }
-
-      #contact-us {
         display: none;
       }
       
@@ -340,11 +335,9 @@
   // Home
   #home {
     &-a {
-      padding-top: 10rem;
       .section-title {
         font-size: 1.5rem;
         padding-bottom: 0.3rem;
-        padding-top: 1rem;
       }
       .bottom-line {
         height: 1px;
@@ -433,7 +426,7 @@
   #contact {
     &-a {
       .section-title {
-        font-size: 2rem;
+        font-size: 1.2rem;
       }
 
       .bottom-line {
@@ -510,7 +503,7 @@
   }
   #header {
     &-home {
-      height: 0rem;
+      height: 8.3rem;
       border-bottom: 1px solid $main-color;
       background-position: 20% 30%;
 
@@ -521,13 +514,12 @@
       #main-nav {
         flex-direction: column;
         align-items: center;
-        padding-top: 0rem;
     
         li {
-          padding: 0.7rem;
-    
+          padding: 0.5rem;
+
           a {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
           }
         }
       }
@@ -596,7 +588,6 @@
       .section-title {
         font-size: 1.2rem;
         padding-bottom: 0.1rem;
-        padding-top: 0.5rem;
       }
       .bottom-line {
         height: 1px;
@@ -679,8 +670,8 @@
         }
 
         img {
-          width: 350px;
-          height: 390px;
+          width: 390px;
+          height: 300px;
         }
       }
     }
@@ -707,8 +698,7 @@
       .specials {
         margin-top: 1.5rem;
         margin-bottom: 0;
-        grid-template-columns: repeat(2, 2fr);
-        padding: 5px;
+        align-items: center;
 
         .bx, .fas {
           font-size: 2.3rem;
@@ -727,7 +717,7 @@
   #contact {
     &-a {
       .section-title {
-        font-size: 1.9rem;
+        font-size: 0.9rem;
       }
 
       .bottom-line {
@@ -820,7 +810,7 @@
   }
   #header {
     &-home {
-      height: 0rem;
+      height: 7.7rem;
       border-bottom: 1px solid $main-color;
       background-position: 20% 30%;
 
@@ -834,10 +824,10 @@
     
         ul {
           li {
-            padding: 0.7rem;
+            padding: 0.3rem;
   
             a {
-              font-size: 0.8rem;
+              font-size: 0.45rem;
             }
 
             .current {
@@ -854,6 +844,21 @@
 
     &-inner {
       height: 7.7rem;
+
+      #main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+          li {
+            padding: 0.3rem;
+  
+            a {
+              font-size: 0.45rem;
+            }
+          }
+        }
+      }
     }
   }
 // Work
@@ -976,8 +981,8 @@
         }
 
         img {
-          width: 220px;
-          height: 250px;
+          width: 250px;
+          height: 180px;
           border-radius: 5px;
         }
       }
@@ -1036,10 +1041,8 @@
   
   #contact {
     &-a {
-      padding-top: 3rem;
-
       .section-title {
-        font-size: 1.7rem;
+        font-size: 0.8rem;
       }
 
       .bottom-line {
