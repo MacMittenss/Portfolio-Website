@@ -27,7 +27,7 @@ The site includes clear navigation across dedicated pages for Home, About, Work 
 - Learning React to migrate the portfolio to a component-based architecture in future versions
 
 ## 🚀 Live Site
-[Portfolio Website](marcusprater.com)
+[Portfolio Website](https://marcusprater.com)
 
 ---
 
