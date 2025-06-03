@@ -2,6 +2,8 @@
 @import 'utilities';
 @import 'item_grid';
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 // General Styles
 * {
@@ -102,14 +104,14 @@ section {
       color: $light-color;
       
       h1 {
-        font-size: 3.7rem;
-        line-height: 1.6;
-        font-family: 'Yeseva One', cursive;
-        font-weight: 900;
+        font-size: 4.2rem;
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 1000;
       }
 
       p {
-        font-family: 'Yeseva One', cursive;
+        font-family: 'Poppins', sans-serif;
       }
     }
 
@@ -125,7 +127,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.7);
   }
 
   &-home * {
@@ -255,10 +257,11 @@ section {
     margin-bottom: 10px;
     padding-bottom: 0;
     .about-info {
-      display: grid;
-      grid-template-areas:
-      'bioimage bio bio';
-      grid-gap: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: left;
+    justify-items: left;
     }
 
     .section-title {
@@ -269,8 +272,8 @@ section {
     // Grid Area
     .bio-image {
       grid-area: bioimage;
-      height: 350px;
-      width: 350px;
+      height: 250px;
+      width: 250px;
       object-fit: cover;
       border-radius: 10px;
       margin-top: 5px;
@@ -284,7 +287,10 @@ section {
 
     .bio {
       grid-area: bio;
-      padding: 20px;
+      padding: 2rem;
+      p {
+        margin-bottom: 2rem;
+      }
     }
 
     .award-1 {
@@ -329,21 +335,22 @@ section {
     background: $dark-color;
     border-bottom: 1px solid rgba(169, 169, 169, 0.3);
     margin-top: 0px;
-
+    padding: 2rem 0; // added padding to give some breathing room
+  
     .container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 0.1rem;
+      grid-gap: 2rem; // increased grid-gap to give more space between icons
       text-align: center;
-
+  
       .bx {
         background: $dark-color;
         font-size: 5rem;
         transition: all 0.2s ease;
         padding: 1rem;
-
+  
         &:hover {
-          transform: scale(1.5);
+          transform: scale(1.2); // reduced transform scale on hover
         }
       }
     }
